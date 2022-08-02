@@ -7,9 +7,9 @@ app = Flask(__name__)
 app.secret_key = "12345"
 
 app.config["MYSQL_HOST"] = "localhost"
-app.config["MYSQL_USERNAME"] = "root" 
+app.config["MYSQL_USER"] = "root" 
 app.config["MYSQL_PASSWORD"] = "faranu1419IUNC"
-app.config["MYSQL_DB"] = "loginlab"
+app.config["MYSQL_DB"] = "login"
 db = MySQL(app)
 
 @app.route("/", methods=['GET','POST'])
